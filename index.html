@@ -14,37 +14,6 @@
     <div id="kolor">
         <button id="blok">kolor</button>
         <script>
-        let kolor = document.querySelector(".kolor");
-        let przyciski = document.querySelectorAll(".przycisk");
-        przyciski = Array.from(przyciski);
-        let random_przyciski = Math.floor(Math.random()*3);
-        let kolory = ['red', 'blue', 'green', 'yellow'];
-        let random = Math.floor(Math.random()*kolory.length);
-        kolor.style.backgroundColor = kolory[random];
-        let nazwy = ['czerwony', 'niebieski', 'zielony', 'żółty'];
-        let a = nazwy[random];
-        do{
-            nazwy = ['czerwony', 'niebieski', 'zielony', 'żółty'];
-            for(i=0; i<3; i++){
-            let losowy = Math.floor(Math.random()*nazwy.length);
-            przyciski[i].innerHTML = nazwy[losowy];
-            nazwy.splice(losowy,1);
-        }
-    }while(a == nazwy[0]);
-    nazwy = ['czerwony', 'niebieski', 'zielony', 'żółty'];
-    let wynik = document.querySelector(".wynik");
-    let punkty = 0;
-    function sprawdz(){
-        przyciski.forEach(przycisk =>{
-            if(przycisk.innerHTML === nazwy[random]){
-                punkty++;
-                wynik.innerHTML = punkty;
-            }
-            else{
-
-            }
-        })
-    }
     </script>
     </div>
     <div id="odpowiedzi">
@@ -56,18 +25,6 @@
         <br>
         <button class="sprawdz"  onclick="sprawdz()" id="opd3">Pink</button>
     </div>
-    <footer>
-    <div class="game">
-        <div class="kolor">
-
-        </div>
-        <div class="przyciski">
-            <div class="przycisk" onclick="sprawdz()"></div>
-            <div class="przycisk" onclick="sprawdz()"></div>
-            <div class="przycisk" onclick="sprawdz()"></div>
-        </div>
-        <div class="wynik">
-
-        </div></footer>
+    <footer></footer>
 </body>
 </html>
