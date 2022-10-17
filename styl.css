@@ -1,0 +1,88 @@
+:root{
+    --glownykolor: rgb(124, 192, 248);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: whitesmoke;
+}
+header{
+    background-color: var(--glownykolor); 
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+#tytul{
+    color: white;
+    padding: 5px 0px;
+}
+#kolor{
+    padding: 30px 29%;
+}
+/*
+czerwony rgb(255, 61, 61)
+pomaranczowy rgb(255, 145, 61)
+zolty rgb(255, 213, 61)
+zielony rgb(61, 255, 71)
+niebieski rgb(124, 192, 248)
+fioletowy rgb(236, 124, 248)*/
+#blok{
+    background-color: rgb(255, 145, 61);
+    border-radius: 20px;
+    padding: 70px 70px;
+}
+#odpowiedzi{
+    height: 200px;
+    width: 50%;
+    text-align: center;
+    margin: 10px 24%;
+}
+#odp{
+    color: black;
+}
+.sprawdz{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: whitesmoke;
+    border: whitesmoke 1px solid;
+    font-size: large;
+}
+#center {
+    position: absolute;
+    top: 75%;
+    left: 49%;
+    transform: translateY(-300%) translateX(-50%);
+  }
+  
+  #title{
+    position:absolute;
+    margin-top: 5%;
+    left:50%;
+    transform: translateX(-50%) translateY(200%);
+    font-size:30px;
+    line-height: 30px;
+  }
+  #score {
+    margin-top: 10px;
+    font-size:40px;
+    line-height: 40px;
+  }
+  #niepoprawne{
+    color:  rgb(255, 61, 61);
+    margin-left: 43%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 40px;
+  }
+@media only screen and (min-width: 1080px){
+    #kolor{
+        padding: 30px 43.5%;
+    }
+}
+@media only screen and (min-width: 1090px){
+    #kolor{
+        padding: 30px 45.6%;
+    }
+}
